@@ -1,0 +1,18 @@
+.distantBlock {
+    background-color: #fff7e0;
+    height: 100px;
+}
+
+.distantContainer {
+    flex-direction: column;
+}
+
+.desc {
+    background-color: #bdbcbc;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #bdbcbc;
+    font-size: 16px;
+}
