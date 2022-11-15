@@ -1,0 +1,10 @@
+@import "../../../common/styles/sass/variables";
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $textColor;
+    margin: 90px 0 50px;
+}

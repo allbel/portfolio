@@ -1,0 +1,48 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+.skill {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $textColor;
+    @include box();
+
+    .inner {
+        .icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        h3{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+
+        .desc {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 22px;
+        }
+
+        & > * {
+            transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+            transform: translateY(20px);
+        }
+    }
+
+    &::before {
+        @include hoverBox()
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &:hover .inner > * {
+        transform: translateY(0px);
+    }
+}

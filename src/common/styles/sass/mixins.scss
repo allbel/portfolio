@@ -1,0 +1,35 @@
+@mixin text($fontSize, $fontWeight, $color) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}
+
+@mixin box() {
+  box-shadow: $shadow;
+  text-align: left;
+  position: relative;
+  background: $bgSecondColor;
+  padding: 35px 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  transition: 0.5s all ease-in-out;
+  z-index: 1;
+}
+
+@mixin hoverBox() {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+}
+
+@mixin separator() {
+  border-bottom: 1px solid #121415;
+}
