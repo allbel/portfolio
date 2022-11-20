@@ -1,0 +1,25 @@
+@import "../../../common/styles/sass/variables";
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  margin-right: 50px;
+  text-transform: uppercase;
+  color: $lightColor;
+  transition: 0.4s;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.nav a:last-child {
+  margin-right: 0;
+}
+
+.nav a:hover {
+  color: $primaryColor;
+}
