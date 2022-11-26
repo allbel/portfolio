@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Projects.module.scss'
-import smain from "../../common/styles/container.module.css";
+import smain from "../../common/styles/container.module.scss";
 import Project from "./Project/Project";
 import Title from "../../common/components/Title/Title";
 import socialImage from "../../assets/image/social_network.jpeg";

@@ -1,3 +1,5 @@
+@import "../../common/styles/sass/mixins";
+
 .container {
     height: 100%;
     width: 80%;
@@ -6,4 +8,5 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include separator();
 }
