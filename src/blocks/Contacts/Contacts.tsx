@@ -20,7 +20,7 @@ const Contacts = () => {
                         </div>
                         <div className={s.formGroup}>
                             <label htmlFor="contactMessage">Your Message</label>
-                            <textarea className={s.filedMessage} id="contactMessage" cols={40} rows={10}></textarea>
+                            <textarea className={s.filedMessage} id="contactMessage"></textarea>
                         </div>
                         <button type={'submit'} className={s.button}>Send message</button>
                     </form>

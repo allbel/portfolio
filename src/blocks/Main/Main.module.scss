@@ -6,9 +6,17 @@
     background-color: #212428;
     font-family: "Montserrat", sans-serif;
 
+    @media screen and (max-width: 1650px) {
+        height: auto;
+    }
+
     .text {
         width: 900px;
         color: #fff;
+
+        @media screen and (max-width: 1650px) {
+            padding-top: 40px;
+        }
 
         .subtitle{
             font-size: 14px;
@@ -25,6 +33,18 @@
             line-height: 62px;
             margin-bottom: 22px;
 
+            @media screen and (max-width: 1024px) {
+                font-size: 45px;
+            }
+
+            @media screen and (max-width: 780px) {
+                font-size: 35px;
+            }
+
+            @media screen and (max-width: 480px) {
+                font-size: 26px;
+            }
+
             span {
                 color: #f9004d;
             }
@@ -35,6 +55,65 @@
             font-size: 16px;
             font-weight: 400;
             color: $lightColor;
+            margin-bottom: 40px;
+        }
+
+        .socialBox {
+            margin-bottom: 40px;
+
+            .socialTitle {
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 300;
+                color: $textColor;
+                display: inline-block;
+                margin-bottom: 20px;
+                margin-left: 10px;
+            }
+
+            .socialList {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                & li {
+                    width: 80px;
+                    height: 80px;
+                    padding: 10px;
+
+                    & a {
+                        color: #fff;
+                        text-decoration: none;
+                        display: inline-block;
+                        width: 60px;
+                        height: 60px;
+                        font-size: 0;
+                        line-height: 60px;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        border-radius: 6px;
+                        transition: 0.4s;
+                        background: $bgSecondColor;
+                        box-shadow: $shadow;
+                        position: relative;
+
+                        & img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+
+                    & a:hover {
+                        transform: translateY(-3px);
+                        background: linear-gradient(to right bottom, #212428, #16181c);
+                    }
+                }
+            }
         }
     }
 
