@@ -45,7 +45,7 @@
                 font-size: 26px;
             }
 
-            span {
+            .name {
                 color: #f9004d;
             }
         }
@@ -120,6 +120,15 @@
     .photo {
         width: 400px;
         height: 500px;
+        padding: 0 !important;
+        font-size: 0;
+        overflow: hidden;
         @include box();
+        box-shadow: -20px -20px 20px #1c1e22, 20px 20px 20px #1c1e22;
+
+        img {
+            max-width: 100%;
+            position: relative;
+        }
     }
 }

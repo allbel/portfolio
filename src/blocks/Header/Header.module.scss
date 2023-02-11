@@ -2,10 +2,13 @@
 
 .header {
     height: 80px;
-    background-color: $bgColor;
+    width: 100%;
+    background-color: rgba(33, 36, 40, 0.96);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    z-index: 2;
 
     .headerContainer {
         position: relative;

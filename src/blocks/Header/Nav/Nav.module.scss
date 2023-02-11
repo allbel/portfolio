@@ -4,22 +4,32 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
 
-.nav a {
-  margin-right: 50px;
-  text-transform: uppercase;
-  color: $lightColor;
-  transition: 0.4s;
-  font-size: 13px;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-}
+  a {
+    margin-right: 50px;
+    text-transform: uppercase;
+    color: $lightColor;
+    transition: 0.4s;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.nav a:last-child {
-  margin-right: 0;
-}
+  a:last-child {
+    margin-right: 0;
+  }
 
-.nav a:hover {
-  color: $primaryColor;
+  a:hover {
+    color: $primaryColor;
+  }
+
+  .active {
+    color: $primaryColor;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
 }
