@@ -2,7 +2,7 @@
 @import "../../../common/styles/sass/mixins";
 
 .job {
-    max-width: 440px;
+    width: 440px;
     @include box();
 
     .imgBox {
@@ -30,10 +30,20 @@
         }
 
         .look {
-            background-color: #c4c4c4;
-            padding: 10px;
+            //background-color: #f9004d;
+            //padding: 10px;
             position: relative;
             z-index: 1;
+            display: none;
+            font-size: 0;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .imgBox:hover {
+        .look {
+            display: block;
         }
     }
 
